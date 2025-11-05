@@ -1,5 +1,4 @@
 # Evolutionary Algorithm for TSP/ATSP
-
 This project tackles the **Travelling Salesperson Problem** (TSP) and its **asymmetric** variant (ATSP) using an **Evolutionary Algorithm** (EA) with **2-opt local search**.  
 The method is designed to work on **all provided instances**:
 
@@ -10,7 +9,7 @@ The EA always builds **closed tours** (last → first edge included in the fitne
 
 ---
 
-## ✨ Design choices
+## Design choices
 
 ### Initialization (population)
 - **Greedy NN (Nearest-Neighbor)** on **symmetric** problems.
@@ -39,7 +38,7 @@ The EA always builds **closed tours** (last → first edge included in the fitne
 
 ---
 
-## ⚙️ Main parameters
+## Main parameters
 
 - `pop_size`: adaptive default (`max(40, min(120, n // 5))`)
 - `offspring_per_iter`: adaptive default (`max(20, min(80, n // 4))`)
